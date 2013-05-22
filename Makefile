@@ -1,4 +1,4 @@
-all: finished
+all: craftbukkit.jar plugins/PhysicalShop.jar plugins/WorldBorder.jar
 
 craftbukkit.jar:
 	wget http://dl.bukkit.org/downloads/craftbukkit/get/02110_1.5.2-R0.1/craftbukkit-beta.jar
@@ -10,8 +10,6 @@ plugins/PhysicalShop.jar:
 plugins/WorldBorder.jar:
 	wget -P plugins/ http://dev.bukkit.org/media/files/696/223/WorldBorder.jar 
 
-finished: craftbukkit.jar plugins/PhysicalShop.jar plugins/WorldBorder.jar
-	touch finished
 clean:
 	rm -rf world \
 		world_nether \
