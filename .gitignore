@@ -1,10 +1,11 @@
 /*.swp
 /craftbukkit.jar
-/plugins/*.jar
-/world/
-/world_nether/
-/world_the_end/
+/crash-reports/
 /help.yml
+/plugins/*.jar
 /server.log
 /server.log.lck
 /server.properties
+/world/
+/world_nether/
+/world_the_end/
