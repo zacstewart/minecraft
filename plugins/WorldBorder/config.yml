@@ -8,3 +8,10 @@ knock-back-dist: 3.0
 timer-delay-ticks: 5
 dynmap-border-enabled: true
 dynmap-border-message: The border of the world.
+worlds:
+  world:
+    x: 0.0
+    z: 0.0
+    radiusX: 15000
+    radiusZ: 15000
+    wrapping: false
