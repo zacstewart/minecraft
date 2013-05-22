@@ -1,0 +1,33 @@
+buy:
+  mode: SPLIT
+  pattern: ^\D+(?=\d)|(?<=\d)\D+(?=\d)|(?<=\d)\D*(?=\D$)
+  amount-index: 1
+  price-index: 2
+  currency-index: 3
+sell:
+  mode: SPLIT
+  pattern: ^\D+(?=\d)|(?<=\d)\D+(?=\d)|(?<=\d)\D*(?=\D$)
+  amount-index: 1
+  price-index: 2
+  currency-index: 3
+protect-explode: true
+material-pattern: \[(.+)\]
+auto-fill-name: true
+server-shop: '[Server]'
+protect-chest-access: true
+protect-break: true
+log-block: false
+language: English
+protect-existing-chest: true
+trigger-redstone: false
+extended-names: false
+detailed-output: true
+update-url: http://cfapi.lukegb.com/dl/physicalshop/
+showcase-mode: true
+shop-block-blacklist:
+- BURNING_FURNACE
+- FURNACE
+currencies:
+  d: Diamond
+  i: Iron Ingot
+  g: Gold Ingot
