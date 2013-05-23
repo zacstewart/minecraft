@@ -1,4 +1,4 @@
-all: craftbukkit.jar plugins/PhysicalShop.jar plugins/WorldBorder.jar plugins/Citadel.1_5_2_R3.v2_2_6.jar plugins/RandomSpawn-2.6.jar
+all: craftbukkit.jar plugins/PhysicalShop.jar plugins/WorldBorder.jar plugins/Citadel.1_5_2_R3.v2_2_6.jar plugins/RandomSpawn-2.6.jar plugins/PrisonPearl.1_5_2_R3.v1_6_3.jar
 	mysql -uroot -e "DROP USER 'bukkit'@'localhost';"
 	mysql -uroot -e "CREATE USER 'bukkit'@'localhost';"
 	mysql -uroot -e "CREATE DATABASE IF NOT EXISTS bukkit;"
@@ -20,6 +20,10 @@ plugins/RandomSpawn-2.6.jar:
 plugins/Citadel.1_5_2_R3.v2_2_6.jar:
 	wget -P plugins/ http://dev.bukkit.org/media/files/701/599/Citadel.1_5_2_R3.v2_2_6.jar
 	mysql -ubukkit bukkit < plugins/Citadel/database_tables.sql
+
+plugins/PrisonPearl.1_5_2_R3.v1_6_3.jar:
+	wget -P plugins/ http://dev.bukkit.org/media/files/701/596/PrisonPearl.1_5_2_R3.v1_6_3.jar
+
 clean:
 	rm -rf world \
 		world_nether \
