@@ -1,4 +1,4 @@
-all: craftbukkit.jar plugins/PhysicalShop.jar plugins/WorldBorder.jar plugins/Citadel.1_5_2_R3.v2_2_6.jar
+all: craftbukkit.jar plugins/PhysicalShop.jar plugins/WorldBorder.jar plugins/Citadel.1_5_2_R3.v2_2_6.jar plugins/RandomSpawn-2.6.jar
 	mysql -uroot -e "DROP USER 'bukkit'@'localhost';"
 	mysql -uroot -e "CREATE USER 'bukkit'@'localhost';"
 	mysql -uroot -e "CREATE DATABASE IF NOT EXISTS bukkit;"
@@ -13,6 +13,9 @@ plugins/PhysicalShop.jar:
 
 plugins/WorldBorder.jar:
 	wget -P plugins/ http://dev.bukkit.org/media/files/696/223/WorldBorder.jar 
+
+plugins/RandomSpawn-2.6.jar:
+	wget -P plugins/ http://dev.bukkit.org/media/files/696/56/RandomSpawn-2.6.jar
 
 plugins/Citadel.1_5_2_R3.v2_2_6.jar:
 	wget -P plugins/ http://dev.bukkit.org/media/files/701/599/Citadel.1_5_2_R3.v2_2_6.jar

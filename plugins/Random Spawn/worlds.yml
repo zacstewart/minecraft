@@ -1,0 +1,19 @@
+world:
+  keeprandomspawns: false
+  randomspawnon:
+  - respawn
+  - bedrespawn
+  - firstjoin
+  spawnarea:
+    x-min: -1500
+    x-max: 1500
+    z-min: -1500
+    z-max: 1500
+  spawnblacklist:
+  - 8
+  - 9
+  - 10
+  - 11
+  - 18
+  - 51
+  - 81
